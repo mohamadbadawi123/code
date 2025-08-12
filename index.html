@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>موقع بسيط — الصفحة الرئيسية</title>
+    <meta name="description" content="موقع ثابت بسيط متعدد الصفحات مع تصميم متجاوب وتهيئة أساسية للـ SEO." />
+
+    <meta property="og:title" content="موقع بسيط" />
+    <meta property="og:description" content="موقع ثابت بسيط متعدد الصفحات مع تصميم متجاوب." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="/assets/img/og-image.svg" />
+
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="logo" href="/">موقعي</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="فتح/إغلاق القائمة">
+          ☰
+        </button>
+        <nav id="site-nav" class="site-nav" role="navigation" aria-label="القائمة الرئيسية">
+          <ul>
+            <li><a href="/">الرئيسية</a></li>
+            <li><a href="/pages/about.html">من نحن</a></li>
+            <li><a href="/pages/contact.html">اتصل بنا</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-main" role="main">
+      <section class="hero">
+        <div class="container">
+          <h1>بناء موقع متجاوب بسرعة</h1>
+          <p>هيكل جاهز للانطلاق: صفحات أساسية، تنسيق نظيف، وسلوكيات بسيطة.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="/pages/about.html">اكتشف المزيد</a>
+            <a class="btn" href="/pages/contact.html">تواصل معنا</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container grid-3">
+          <article class="card">
+            <h2>تصميم متجاوب</h2>
+            <p>التصميم يعمل بسلاسة على الجوال واللوحي وسطح المكتب.</p>
+          </article>
+          <article class="card">
+            <h2>تهيئة SEO</h2>
+            <p>وصف، Open Graph، خرائط موقع وملف robots.txt جاهزة.</p>
+          </article>
+          <article class="card">
+            <h2>سهولة النشر</h2>
+            <p>يناسب GitHub Pages أو أي استضافة ملفات ثابتة.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container">
+          <h2>جاهز للتخصيص</h2>
+          <p>ابدأ بتغيير النصوص والألوان وإضافة أقسامك الخاصة.</p>
+          <a class="btn btn-primary" href="/pages/contact.html">ابدأ الآن</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> موقعي. جميع الحقوق محفوظة.</p>
+        <ul class="footer-links">
+          <li><a href="/pages/about.html">من نحن</a></li>
+          <li><a href="/pages/contact.html">اتصل بنا</a></li>
+          <li><a href="/robots.txt">robots.txt</a></li>
+          <li><a href="/sitemap.xml">sitemap.xml</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js" defer></script>
+  </body>
+</html>

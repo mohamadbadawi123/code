@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>اتصل بنا — موقعي</title>
+    <meta name="description" content="صفحة للتواصل تحتوي على نموذج بسيط." />
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="logo" href="/">موقعي</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="فتح/إغلاق القائمة">☰</button>
+        <nav id="site-nav" class="site-nav" role="navigation" aria-label="القائمة الرئيسية">
+          <ul>
+            <li><a href="/">الرئيسية</a></li>
+            <li><a href="/pages/about.html">من نحن</a></li>
+            <li><a aria-current="page" href="/pages/contact.html">اتصل بنا</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-main" role="main">
+      <section class="container" style="padding: 48px 0; max-width: 720px;">
+        <h1>اتصل بنا</h1>
+        <p>أرسل لنا رسالة عبر النموذج التالي. لا يوجد خادم خلفي لهذا القالب؛ يمكنك ربطه بخدمات مثل Formspree أو إضافة back-end لاحقًا.</p>
+
+        <form class="card" style="display: grid; gap: 12px;" onsubmit="event.preventDefault(); alert('تم إرسال النموذج كتجربة. أضف تكامل الإرسال لاحقًا.');">
+          <label>
+            الاسم
+            <input name="name" type="text" required placeholder="اسمك" style="width:100%; padding:10px; border-radius:8px; border:1px solid #2a356c; background:#0f1530; color:#e6e8ef;" />
+          </label>
+          <label>
+            البريد الإلكتروني
+            <input name="email" type="email" required placeholder="you@example.com" style="width:100%; padding:10px; border-radius:8px; border:1px solid #2a356c; background:#0f1530; color:#e6e8ef;" />
+          </label>
+          <label>
+            الرسالة
+            <textarea name="message" rows="6" required placeholder="اكتب رسالتك" style="width:100%; padding:10px; border-radius:8px; border:1px solid #2a356c; background:#0f1530; color:#e6e8ef;"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">إرسال</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> موقعي. جميع الحقوق محفوظة.</p>
+        <ul class="footer-links">
+          <li><a href="/pages/about.html">من نحن</a></li>
+          <li><a href="/pages/contact.html">اتصل بنا</a></li>
+          <li><a href="/robots.txt">robots.txt</a></li>
+          <li><a href="/sitemap.xml">sitemap.xml</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js" defer></script>
+  </body>
+</html>
